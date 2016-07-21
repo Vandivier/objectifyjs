@@ -1,6 +1,14 @@
-<h2>Objectify Basic Example (100x10)</h2>
-<p>
-Check the GitHub, the Readme, and yourself before you wreck yourself.
-</p>
+#objectify-ribbon {
+  height: 34px;
+  width: 100%;
+  border: 1px solid darkGrey;
+}
 
-<div id="example"></div>
+.ojs-col {
+  width: 49%;
+  display: inline-block;
+}
+
+.ojs-row {
+  height: 17px;
+}

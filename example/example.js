@@ -1,14 +1,31 @@
-var data = function () {
-  return Handsontable.helper.createSpreadsheetData(100, 10);
-};
+//import * as {Handsontable} from 'lib\handsontable.0.26.0.full.js';
 
-var container = document.getElementById('example');
+ var
+    example = document.getElementById('example'),
+    example2 = document.getElementById('example2'),
+    hot;
 
-var hot = new Handsontable(container, {
-  data: data(),
-  minSpareCols: 1,
-  minSpareRows: 1,
-  rowHeaders: true,
-  colHeaders: true,
-  contextMenu: true
-});
+/*
+  hot = new Handsontable(example,{
+    //data: Handsontable.helper.createSpreadsheetData(1000, 1000),
+    width: 1900,
+    height: 900,
+    colWidths: 50,
+    minCols: 100,
+    minRows: 100,
+    rowHeights: 25,
+    rowHeaders: true,
+    colHeaders: true
+  });
+*/
+
+  hot2 = new Handsontable(example2,{
+    width: 1900,
+    height: 900,
+    colWidths: 75,
+    rowHeights: 30,
+    minCols: 26,
+    minRows: 50,
+    rowHeaders: true,
+    colHeaders: true
+  });

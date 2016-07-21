@@ -28,7 +28,9 @@ goals:
 dependencies:
   1 http://simplestatistics.org/
   2 https://github.com/handsontable
+  3 (maybe later) http://babeljs.io/
 
 ref:
 https://processwire.com/talk/topic/4147-excel-like-crud-in-pw-using-handsontable/
 http://jsfiddle.net/handsoncode/s6t768pq/
+https://docs.handsontable.com/pro/1.5.0/tutorial-introduction.html
