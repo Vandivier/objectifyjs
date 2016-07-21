@@ -23,6 +23,10 @@ goals:
     - user-defined ticket types
     - user-defined access/rwe control
     - integrate with Agile platforms: Rally, Jira, etc
+      - obtain list of all tickets given a sprint
+      - obtain list of tickets with certain parameters modified over a certain timeline
+      - obtain a list of tickets without tasks added estimated, or updated over the past X days
+      - obtain estimates and actuals of tasks going back through time; correlate error with team, sprint, developer, or other parameter;
     - Hipchat / Slack integration (objectifybot newrow mysheet mytab [column 1 value, column 2 value, column 3...])
 
 dependencies:
@@ -34,3 +38,12 @@ ref:
 https://processwire.com/talk/topic/4147-excel-like-crud-in-pw-using-handsontable/
 http://jsfiddle.net/handsoncode/s6t768pq/
 https://docs.handsontable.com/pro/1.5.0/tutorial-introduction.html
+
+other:
+  -NormalizeKeys();         //given an array of objects, create a list of all observed keys, then give all keys to each object, with a val of null if it wasn't there
+                            //so we can make a spreadsheet or SQL table; be sure to preserve a ref to the original, even if it is stringified
+  -OrderKeys();             //args = string or array; if string use a query like 'alphabetical'; if array then assume all keys arbitrarily ordered
+  -OrderObjects();          //turn a unordered collection of objects into an ordered array;
+  -KeylessRegression();     //
+  -Likeness();              //two objects are perfectly alike if they have identical properties, regardless of value; Likeness can compare an object to another or one object to the model normal object (eg NormalizeKeys())
+  -ImputeValue();           //given an object is unlike the model normal object, how do we treat it? We can drop from regression, impute average, impute linear, or impute custom
