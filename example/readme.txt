@@ -32,7 +32,9 @@ goals:
 dependencies:
   1 http://simplestatistics.org/
   2 https://github.com/handsontable
-  3 (maybe later) http://babeljs.io/
+  3 https://github.com/wdavidw/node-csv
+  4 https://nodejs.org/en/
+  5 (maybe later) http://babeljs.io/
 
 ref:
 https://processwire.com/talk/topic/4147-excel-like-crud-in-pw-using-handsontable/

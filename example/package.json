@@ -1,0 +1,25 @@
+{
+  "name": "objectifyjs",
+  "version": "0.0.1",
+  "description": "does the regression things",
+  "keywords": ["agile", "planning", "project", "management", "statistics", "data", "regression", "spreadsheet"],
+  "homepage": "afterecon.com",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.1.90"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vandivier/objectifyjs"
+  },
+  "dependencies": {
+    "csv-generate": "^1.0.0",
+    "csv-parse": "^1.1.0",
+    "stream-transform": "^0.1.0",
+    "csv-stringify": "^1.0.0"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "scripts": {}
+}
